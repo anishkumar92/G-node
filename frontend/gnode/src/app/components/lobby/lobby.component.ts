@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import {v4 as uuidv4 } from 'uuid';
+import { v4 as uuidv4 } from 'uuid';
 
 @Component({
   selector: 'app-lobby',
@@ -14,9 +14,9 @@ export class LobbyComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  createGame(){
+  createGame() {
     const uuid = uuidv4();
-    this.router.navigate(['/game',uuid]);
+    this.router.navigate(['/game', uuid]);
   }
 
 }
